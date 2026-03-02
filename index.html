@@ -1,293 +1,227 @@
 <!doctype html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harumi Flores | Portafolio Culinario</title>
-  <meta name="description"
-    content="Portafolio culinario de Harumi Saraid Flores Huaraca. Gastronomía & Arte Culinario — SENATI." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harumi Flores | Atención al Cliente</title>
+<meta content="CV web de Harumi Saraid Flores Huaraca — Atención al Cliente y Servicio en Restaurante. Pisco, Perú." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet">
+</link></head>
 <body>
-  <div class="page kitchen-grid">
-    <!-- Navigation -->
-    <nav class="glass-nav">
-      <div class="container nav-inner">
-        <button class="brand" data-scroll="home" aria-label="Ir a Inicio">
-          <span class="brand-badge" aria-hidden="true"><i data-lucide="chef-hat"></i></span>
-          <span class="brand-text">Harumi Flores</span>
-        </button>
-
-        <!-- Desktop Nav -->
-        <div class="nav-desktop">
-          <button class="nav-link active" data-scroll="home">Inicio</button>
-          <button class="nav-link" data-scroll="about">Sobre Mí</button>
-          <button class="nav-link" data-scroll="skills">Habilidades</button>
-          <button class="nav-link" data-scroll="experience">Experiencia</button>
-          <button class="nav-link" data-scroll="education">Educación</button>
-
-          <a class="btn btn-primary" href="HARUMI-CV.pdf" download="Harumi-Flores-CV.pdf" aria-label="Descargar CV">
-            <i data-lucide="download"></i><span>CV</span>
-          </a>
-        </div>
-
-        <!-- Mobile Toggle -->
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-          <i data-lucide="menu"></i>
-        </button>
+<div class="page kitchen-grid">
+<!-- Navigation -->
+<nav class="glass-nav">
+<div class="container nav-inner">
+<button aria-label="Ir a Inicio" class="brand" data-scroll="home">
+<span aria-hidden="true" class="brand-badge"><i data-lucide="users"></i></span>
+<span class="brand-text">Harumi Flores</span>
+</button>
+<!-- Desktop Nav -->
+<div class="nav-desktop">
+<button class="nav-link active" data-scroll="home">Inicio</button>
+<button class="nav-link" data-scroll="about">Sobre Mí</button>
+<button class="nav-link" data-scroll="skills">Habilidades</button>
+<button class="nav-link" data-scroll="experience">Experiencia</button>
+<button class="nav-link" data-scroll="education">Educación</button>
+<a aria-label="Descargar CV" class="btn btn-primary" download="Harumi-Flores-CV.pdf" href="HARUMI-CV.pdf" id="cvLinkDesktop">
+<i data-lucide="download"></i><span>CV</span>
+</a>
+</div>
+<!-- Mobile Toggle -->
+<button aria-expanded="false" aria-label="Abrir menú" class="nav-toggle" id="navToggle">
+<i data-lucide="menu"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="nav-mobile" hidden="" id="navMobile">
+<div class="container nav-mobile-inner">
+<button class="nav-mobile-link" data-scroll="home">Inicio</button>
+<button class="nav-mobile-link" data-scroll="about">Sobre Mí</button>
+<button class="nav-mobile-link" data-scroll="skills">Habilidades</button>
+<button class="nav-mobile-link" data-scroll="experience">Experiencia</button>
+<button class="nav-mobile-link" data-scroll="education">Educación</button>
+<a aria-label="Descargar CV" class="btn btn-primary btn-full" download="Harumi-Flores-CV.pdf" href="HARUMI-CV.pdf" id="cvLinkMobile">
+<i data-lucide="download"></i><span>Descargar CV</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Hero -->
+<header class="hero" id="home">
+<div aria-label="Restaurante" class="hero-bg" role="img"></div>
+<div class="hero-fade"></div>
+<div class="container hero-content reveal">
+<span class="pill">Atención al Cliente &amp; Servicio</span>
+<h1 class="hero-title">
+          Harumi Saraid<br/>
+<span class="hero-accent">Flores Huaraca</span>
+</h1>
+<div class="hero-meta">
+<span><i data-lucide="map-pin"></i> Pisco, Perú</span>
+<span><i data-lucide="users"></i> Disponibilidad inmediata</span>
+</div>
+</div>
+</header>
+<main class="container main">
+<!-- About & Contact Grid -->
+<div class="grid-12 overlap">
+<!-- About -->
+<section class="card col-8 reveal" id="about">
+<h2 class="section-title">Sobre Mí</h2>
+<div class="prose"><p class="chef-border">Joven responsable y proactiva con vocación de <strong>atención al cliente</strong>. Me destaco por mi amabilidad, comunicación clara y rapidez para atender pedidos y consultas.</p><p>Busco integrarme a un equipo de restaurante donde pueda brindar una excelente experiencia al cliente, mantener el orden del área de atención y apoyar en momentos de alta demanda.</p><p>Cuento con formación en el rubro gastronómico (SENATI), lo que refuerza mi enfoque en higiene, trabajo en equipo y servicio eficiente.</p></div>
+</section>
+<!-- Contact -->
+<section class="card card-dark col-4 reveal delay-1">
+<h2 class="contact-title">Contacto</h2>
+<div class="contact-list">
+<a class="contact-item" href="mailto:harumifloreshuaraca@gmail.com">
+<span class="contact-icon"><i data-lucide="mail"></i></span>
+<span class="contact-text">
+<span class="label">Email</span>
+<span class="value" title="harumifloreshuaraca@gmail.com">Enviar mensaje</span>
+</span>
+</a>
+<a class="contact-item" href="tel:+51928137270">
+<span class="contact-icon"><i data-lucide="phone"></i></span>
+<span class="contact-text">
+<span class="label">Teléfono</span>
+<span class="value">+51 928 137 270</span>
+</span>
+</a>
+<a aria-label="Ubicación" class="contact-item" href="https://www.google.com/maps/search/?api=1&amp;query=Pisco%2C%20Per%C3%BA">
+<span class="contact-icon"><i data-lucide="map-pin"></i></span>
+<span class="contact-text">
+<span class="label">Ubicación</span>
+<span class="value">Lima, Perú</span>
+</span>
+</a>
+</div>
+<div class="contact-social">
+<a aria-label="Instagram (agrega tu enlace)" class="social-btn" href="#"><i data-lucide="instagram"></i></a>
+<a aria-label="LinkedIn (agrega tu enlace)" class="social-btn" href="#"><i data-lucide="linkedin"></i></a>
+</div>
+</section>
+</div>
+<!-- Skills Section -->
+<section class="section-space" id="skills">
+<h2 class="section-title">Habilidades</h2>
+<div class="cards-4">
+<article class="card reveal">
+<div class="icon-badge"><i data-lucide="headset"></i></div>
+<h3 class="card-title">Atención al Cliente</h3>
+<div class="badges"><span class="badge">Recepción y orientación</span><span class="badge">Toma de pedidos</span><span class="badge">Comunicación amable</span></div>
+</article>
+<article class="card reveal delay-1">
+<div class="icon-badge"><i data-lucide="utensils"></i></div>
+<h3 class="card-title">Servicio</h3>
+<div class="badges"><span class="badge">Rapidez en atención</span><span class="badge">Orden del área</span><span class="badge">Apoyo en horas pico</span></div>
+</article>
+<article class="card reveal delay-2">
+<div class="icon-badge"><i data-lucide="credit-card"></i></div>
+<h3 class="card-title">Caja y Coordinación</h3>
+<div class="badges"><span class="badge">Cobros y tickets</span><span class="badge">Coordinación con cocina</span><span class="badge">Entrega de pedidos</span></div>
+</article>
+<article class="card reveal delay-3">
+<div class="icon-badge"><i data-lucide="shield-check"></i></div>
+<h3 class="card-title">Buenas Prácticas</h3>
+<div class="badges"><span class="badge">Higiene y limpieza</span><span class="badge">Trabajo en equipo</span><span class="badge">Puntualidad</span></div>
+</article>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="section-space" id="experience">
+<h2 class="section-title">Experiencia Relevante</h2>
+<div class="card card-pad-lg">
+<div class="exp-item reveal">
+<div class="exp-head">
+<h3 class="exp-title">Formación Gastronómica (SENATI)</h3>
+<span class="exp-period">2023 — PRESENTE</span>
+</div>
+<p class="exp-company">SENATI - Talleres de Especialización</p>
+<p class="exp-desc">Entrenamiento en entornos de cocina con enfoque en servicio, trabajo bajo presión y coordinación con el equipo.</p>
+<ul class="exp-grid">
+<li><i data-lucide="star"></i> Trabajo bajo presión y tiempos de servicio</li>
+<li><i data-lucide="star"></i> Buenas prácticas de higiene y manipulación</li>
+<li><i data-lucide="star"></i> Trabajo en equipo y comunicación</li>
+<li><i data-lucide="star"></i> Orden y organización (mise en place)</li>
+</ul>
+</div>
+<hr class="divider"/>
+<div class="exp-item reveal delay-1">
+<div class="exp-head">
+<h3 class="exp-title">Prácticas en Restaurante</h3>
+<span class="exp-period">2024 — PRÁCTICAS</span>
+</div>
+<p class="exp-company">Polleria Norky´s</p>
+<p class="exp-desc">Apoyo en cocina durante servicios de alto volumen, manteniendo estándares de calidad, orden y rapidez.</p>
+<ul class="exp-grid">
+<li><i data-lucide="star"></i> Gestión de pedidos en horas pico</li>
+<li><i data-lucide="star"></i> Apoyo al equipo y coordinación interna</li>
+<li><i data-lucide="star"></i> Control básico de inventario y rotación</li>
+<li><i data-lucide="star"></i> Limpieza y orden del área de trabajo</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="section-space" id="education">
+<h2 class="section-title">Educación</h2>
+<div class="card edu reveal">
+<div class="edu-icon">
+<i data-lucide="graduation-cap"></i>
+</div>
+<div class="edu-body">
+<span class="edu-kicker">Carrera Profesional</span>
+<h3 class="edu-title">Gastronomía y Arte Culinario</h3>
+<p class="edu-sub">SENATI — En curso</p>
+<div class="edu-badges">
+<span class="pill-soft"><i data-lucide="award"></i> Cursos y Auditorias en Higiene</span>
+<span class="pill-soft"><i data-lucide="award"></i> Buenas Prácticas (BPM)</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+<div class="container footer-inner">
+<div class="footer-brand">
+<div class="footer-logo">
+<i data-lucide="users"></i>
+<span>Harumi Flores</span>
+</div>
+<p>Brindando una atención cálida y eficiente para una excelente experiencia del cliente.</p>
+</div>
+<div class="footer-cols">
+<div>
+<h4>Navegación</h4>
+<ul>
+<li><button data-scroll="home">Inicio</button></li>
+<li><button data-scroll="about">Sobre Mí</button></li>
+<li><button data-scroll="skills">Habilidades</button></li>
+<li><button data-scroll="experience">Experiencia</button></li>
+<li><button data-scroll="education">Educación</button></li>
+</ul>
+</div>
+<div>
+<h4>Social</h4>
+<ul>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+        © <span id="year"></span> Harumi Saraid Flores Huaraca. Todos los derechos reservados.
       </div>
-
-      <!-- Mobile Menu -->
-      <div class="nav-mobile" id="navMobile" hidden>
-        <div class="container nav-mobile-inner">
-          <button class="nav-mobile-link" data-scroll="home">Inicio</button>
-          <button class="nav-mobile-link" data-scroll="about">Sobre Mí</button>
-          <button class="nav-mobile-link" data-scroll="skills">Habilidades</button>
-          <button class="nav-mobile-link" data-scroll="experience">Experiencia</button>
-          <button class="nav-mobile-link" data-scroll="education">Educación</button>
-
-          <a class="btn btn-primary btn-full" href="#" aria-label="Descargar CV (agrega tu archivo)">
-            <i data-lucide="download"></i><span>Descargar CV</span>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <header id="home" class="hero">
-      <div class="hero-bg" role="img" aria-label="Cocina"></div>
-      <div class="hero-fade"></div>
-
-      <div class="container hero-content reveal">
-        <span class="pill">Gastronomía &amp; Arte Culinario</span>
-        <h1 class="hero-title">
-          Harumi Saraid<br />
-          <span class="hero-accent">Flores Huaraca</span>
-        </h1>
-        <div class="hero-meta">
-          <span><i data-lucide="map-pin"></i> Pisco, Perú</span>
-          <span><i data-lucide="chef-hat"></i> SENATI Specialist</span>
-        </div>
-      </div>
-    </header>
-
-    <main class="container main">
-      <!-- About & Contact Grid -->
-      <div class="grid-12 overlap">
-        <!-- About -->
-        <section id="about" class="card col-8 reveal">
-          <h2 class="section-title">Sobre Mí</h2>
-          <div class="prose">
-            <p class="chef-border">
-              Estudiante apasionada de Gastronomía en <strong>SENATI</strong>, con un enfoque especializado en cocina
-              gourmet y marinos. Mi formación combina el respeto por las técnicas clásicas con la curiosidad por las
-              tendencias modernas.
-            </p>
-            <p>
-              Me considero una persona responsable, proactiva y con una gran disposición para aprender y crecer
-              profesionalmente. Mi objetivo es aportar entusiasmo y precisión técnica a equipos de cocina de alto nivel,
-              contribuyendo a la excelencia gastronómica.
-            </p>
-          </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="card card-dark col-4 reveal delay-1">
-          <h2 class="contact-title">Contacto</h2>
-
-          <div class="contact-list">
-            <a class="contact-item" href="mailto:harumifloreshuaraca@gmail.com">
-              <span class="contact-icon"><i data-lucide="mail"></i></span>
-              <span class="contact-text">
-                <span class="label">Email</span>
-                <a href="mailto:harumifloreshuaraca@gmail.com" class="contact-link">
-                  Enviar mensaje
-                </a>
-              </span>
-            </a>
-
-            <a class="contact-item" href="tel:+51928137270">
-              <span class="contact-icon"><i data-lucide="phone"></i></span>
-              <span class="contact-text">
-                <span class="label">Teléfono</span>
-                <span class="value">+51 928 137 270</span>
-              </span>
-            </a>
-
-            <div class="contact-item" role="group" aria-label="Ubicación">
-              <span class="contact-icon"><i data-lucide="map-pin"></i></span>
-              <span class="contact-text">
-                <span class="label">Ubicación</span>
-                <span class="value">Pisco, Perú</span>
-              </span>
-            </div>
-          </div>
-
-          <div class="contact-social">
-            <a class="social-btn" href="#" aria-label="Instagram (agrega tu enlace)"><i data-lucide="instagram"></i></a>
-            <a class="social-btn" href="#" aria-label="LinkedIn (agrega tu enlace)"><i data-lucide="linkedin"></i></a>
-          </div>
-        </section>
-      </div>
-
-      <!-- Skills Section -->
-      <section id="skills" class="section-space">
-        <h2 class="section-title">Habilidades Técnicas</h2>
-
-        <div class="cards-4">
-          <article class="card reveal">
-            <div class="icon-badge"><i data-lucide="utensils"></i></div>
-            <h3 class="card-title">Especialidades</h3>
-            <div class="badges">
-              <span class="badge">Cocina Gourmet</span>
-              <span class="badge">Platos Marinos</span>
-              <span class="badge">Cocina Tradicional</span>
-            </div>
-          </article>
-
-          <article class="card reveal delay-1">
-            <div class="icon-badge"><i data-lucide="flame"></i></div>
-            <h3 class="card-title">Técnicas</h3>
-            <div class="badges">
-              <span class="badge">Fuego Alto</span>
-              <span class="badge">Mise en Place</span>
-              <span class="badge">Cortes de Precisión</span>
-            </div>
-          </article>
-
-          <article class="card reveal delay-2">
-            <div class="icon-badge"><i data-lucide="shield-check"></i></div>
-            <h3 class="card-title">Seguridad</h3>
-            <div class="badges">
-              <span class="badge">Higiene Alimentaria</span>
-              <span class="badge">Protocolos HACCP</span>
-              <span class="badge">Control de Calidad</span>
-            </div>
-          </article>
-
-          <article class="card reveal delay-3">
-            <div class="icon-badge"><i data-lucide="users"></i></div>
-            <h3 class="card-title">Gestión</h3>
-            <div class="badges">
-              <span class="badge">Trabajo en Equipo</span>
-              <span class="badge">Adaptabilidad</span>
-              <span class="badge">Liderazgo</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="section-space">
-        <h2 class="section-title">Experiencia Profesional</h2>
-
-        <div class="card card-pad-lg">
-          <div class="exp-item reveal">
-            <div class="exp-head">
-              <h3 class="exp-title">Aprendiz de Gastronomía</h3>
-              <span class="exp-period">2023 — PRESENTE</span>
-            </div>
-            <p class="exp-company">SENATI - Talleres de Especialización</p>
-            <p class="exp-desc">Formación intensiva en cocina de alta gama, enfocada en la precisión técnica y la
-              gestión eficiente de estaciones de trabajo.</p>
-            <ul class="exp-grid">
-              <li><i data-lucide="star"></i> Preparación de platillos gourmet complejos</li>
-              <li><i data-lucide="star"></i> Manejo avanzado de pescados y mariscos</li>
-              <li><i data-lucide="star"></i> Aplicación de normas internacionales de higiene</li>
-              <li><i data-lucide="star"></i> Optimización de tiempos en mise en place</li>
-            </ul>
-          </div>
-
-          <hr class="divider" />
-
-          <div class="exp-item reveal delay-1">
-            <div class="exp-head">
-              <h3 class="exp-title">Asistente de Cocina</h3>
-              <span class="exp-period">2024 — PRÁCTICAS</span>
-            </div>
-            <p class="exp-company">Restaurante Polleroa Norky´s</p>
-            <p class="exp-desc">Integración en la brigada de cocina para un servicio de alto volumen, manteniendo
-              estándares de calidad excepcionales.</p>
-            <ul class="exp-grid">
-              <li><i data-lucide="star"></i> Asistencia directa al Chef</li>
-              <li><i data-lucide="star"></i> Control de inventario y rotación de insumos</li>
-              <li><i data-lucide="star"></i> Montaje de platos con estética minimalista</li>
-              <li><i data-lucide="star"></i> Gestión de pedidos en horas pico</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="section-space">
-        <h2 class="section-title">Educación</h2>
-
-        <div class="card edu reveal">
-          <div class="edu-icon">
-            <i data-lucide="graduation-cap"></i>
-          </div>
-          <div class="edu-body">
-            <span class="edu-kicker">Carrera Profesional</span>
-            <h3 class="edu-title">Gastronomía y Arte Culinario</h3>
-            <p class="edu-sub">SENATI — II Semestre</p>
-
-            <div class="edu-badges">
-              <span class="pill-soft"><i data-lucide="award"></i> Curosos y Auditorias en Higiene</span>
-              <span class="pill-soft"><i data-lucide="award"></i> Especialidad en Cocina Marina</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <i data-lucide="chef-hat"></i>
-            <span>Harumi Flores</span>
-          </div>
-          <p>Elevando el arte culinario a través de la técnica, la pasión y la disciplina.</p>
-        </div>
-
-        <div class="footer-cols">
-          <div>
-            <h4>Navegación</h4>
-            <ul>
-              <li><button data-scroll="home">Inicio</button></li>
-              <li><button data-scroll="about">Sobre Mí</button></li>
-              <li><button data-scroll="skills">Habilidades</button></li>
-              <li><button data-scroll="experience">Experiencia</button></li>
-              <li><button data-scroll="education">Educación</button></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Social</h4>
-            <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="container footer-bottom">
-        &copy; <span id="year"></span> Harumi Saraid Flores Huaraca. Todos los derechos reservados.
-      </div>
-    </footer>
-  </div>
-
-  <!-- Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="script.js"></script>
+</footer>
+</div>
+<!-- Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
 </body>
-
 </html>

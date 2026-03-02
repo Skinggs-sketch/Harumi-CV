@@ -1,4 +1,4 @@
-# Portafolio Culinario — Harumi Flores (HTML/CSS/JS)
+# CV Web — Harumi Flores (HTML/CSS/JS)
 
 Versión estática lista para subir a GitHub (y publicar con GitHub Pages).
 
@@ -18,3 +18,7 @@ Versión estática lista para subir a GitHub (y publicar con GitHub Pages).
 ## Personalización rápida
 - Cambia los enlaces de **Instagram/LinkedIn** en `index.html` (busca `href="#"`).
 - Para el CV, reemplaza el `href="#"` del botón “CV” por el enlace a tu PDF (o agrega `cv.pdf` al repo y usa `href="cv.pdf"`).
+
+## CV (PDF)
+- Coloca tu archivo en la raíz del proyecto con el nombre `HARUMI-CV.pdf` (o cambia el `href` en `index.html`).
+- En iPhone/iPad (Safari), el botón abre el PDF porque iOS no siempre permite descarga directa.

@@ -105,4 +105,47 @@
   } else {
     revealEls.forEach((el) => el.classList.add("in"));
   }
+
+  // CV download behavior (mobile-friendly)
+  const cvLinks = [document.getElementById("cvLinkDesktop"), document.getElementById("cvLinkMobile")].filter(Boolean);
+
+  const ua = navigator.userAgent || "";
+  const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  const isAndroid = /Android/.test(ua);
+
+  // iOS Safari often ignores the download attribute for PDFs.
+  // On iOS we open the PDF in a new tab so the user can use the viewer's download/share options.
+  if (isIOS) {
+    cvLinks.forEach((a) => {
+      a.removeAttribute("download");
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noopener");
+    });
+  }
+
+  // On Android/desktop, try to force download with a programmatic click (keeps the nice UX).
+  // If it fails, the normal link will still open the PDF.
+  cvLinks.forEach((a) => {
+    a.addEventListener("click", (e) => {
+      if (isIOS) return; // handled above
+      const href = a.getAttribute("href");
+      if (!href) return;
+      // Only try for same-origin files
+      if (/^https?:/i.test(href)) return;
+
+      // Let default happen if download attr is missing
+      if (!a.hasAttribute("download")) return;
+
+      // Some mobile browsers need the click to be synchronous.
+      // We keep it simple: create a temporary anchor and click it.
+      e.preventDefault();
+      const tmp = document.createElement("a");
+      tmp.href = href;
+      tmp.download = a.getAttribute("download") || "CV.pdf";
+      document.body.appendChild(tmp);
+      tmp.click();
+      tmp.remove();
+    });
+  });
+
 })();

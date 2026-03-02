@@ -636,13 +636,3 @@ img{max-width:100%;display:block}
 @media (min-width: 1024px){
   .cards-4{grid-template-columns:repeat(4, 1fr)}
 }
-.contact-link {
-  color: #d4a853; /* dorado elegante */
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.contact-link:hover {
-  opacity: 0.7;
-}
